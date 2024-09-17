@@ -11,3 +11,11 @@ export default [
   ...tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
 ];
+module.exports = {
+  env: {
+    node: true,
+    commonjs: true,
+    es2021: true,
+  },
+  extends: ['eslint:recommended', 'prettier'],
+};
